@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="sample.js"/>
+</head>
+<body>
+<h1 style="text-align:center">JAVA BOOKS!</h1>
+<hr>
+
+<% players.forEach((product, index) => { %>
+                        
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+        <img src="<%= player.photo %>" alt="" onclick="" style="width:100%">
+      <h3><%= product.title %></h3>
+      <p><%= product.price%></p>    
+    </div>
+  </div>
+</div>
+  <% }) %>
+  </body>
+
+</html>
